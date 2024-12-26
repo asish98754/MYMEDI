@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1588E1"
+    tools:context=".SelectItems">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dashboardTitle"
+                android:text="Select Items"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dashboardTSubtitle"
+                android:text="All Medicines"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/antic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="left"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/medicine1"
+                        android:src="@drawable/padadol"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/medicinelist1"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Panadol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/medidetails1"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Paracitamol,650mg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="select"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_below="@id/medidetails1"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/medicine2"
+                        android:src="@drawable/vitamin"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/medicinelist2"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Vitamin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/medidetails2"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Vitamin,C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnr1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="select"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_below="@id/medidetails2"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="left"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/medicine3"
+                        android:src="@drawable/painkiller"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/medicinelist3"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Pain Relief"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/medidetails3"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Corcin,500mg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnr2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="select"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_below="@id/medidetails3"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="left"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/medicine4"
+                        android:src="@drawable/headache"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/medicinelist4"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Migraine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/medidetails4"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Headache Relief,100mg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="select"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_below="@id/medidetails4"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/medicine5"
+                        android:src="@drawable/mask"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/medicinelist5"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/medidetails5"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="N-95,3 in 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnr4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="select"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_below="@id/medidetails5"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="left"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/medicine6"
+                        android:src="@drawable/mymedii"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/medicinelist6"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="B-Nexa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/medidetails6"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Calcium,1000ml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnr5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="select"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_below="@id/medidetails6"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+        </GridLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+

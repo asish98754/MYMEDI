@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard"
+    tools:context=".Dashboard">
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dashboardTitle"
+                android:text="My Dashboard"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#FF0000"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dashboardTSubtitle"
+                android:text="All Items"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/antic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/mymedii"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circlebackgroundyellow"
+                android:src="@drawable/mymedii"/>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="center"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/reminder"
+                        android:src="@drawable/reminder"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/txtreminder"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Medicine Reminder"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reminder"
+                        android:textColor="#000000"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="center"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/order"
+                        android:src="@drawable/order"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/txtorder"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="18sp"
+                        android:text="Order Medicine"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order"
+                        android:textColor="#000000"
+                        android:textSize="18sp"/>
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="center"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/find"
+                        android:src="@drawable/find"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/txtfind"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textStyle="bold"
+                        android:text="Find Nearby Pharmacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Find"
+                        android:textColor="#000000"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="center"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/note"
+                        android:src="@drawable/note"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/txtnote"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textStyle="bold"
+                        android:text="Note Daily Condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <Button
+                        android:id="@+id/btnn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Note"
+                        android:textColor="#000000"
+                        android:textSize="18sp"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="center"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/logout"
+                        android:src="@drawable/logout"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/txtlogout"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textStyle="bold"
+                        android:text="Log Out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <Button
+                        android:id="@+id/btnlogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log Out"
+                        android:textColor="#000000"
+                        android:textSize="18sp"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

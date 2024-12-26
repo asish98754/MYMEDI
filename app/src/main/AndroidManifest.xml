@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mymedi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="mymedi"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Medi"
+        tools:replace="android:label">
+        <activity
+            android:name=".MapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_map"
+            android:theme="@style/Theme.Medi.NoActionBar" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBa4sLUlJayxud7c2TIYvLD0_UHcN8OOQ4" />
+        <activity
+            android:name=".PermissionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceOrder"
+            android:exported="false" />
+        <activity
+            android:name=".CartListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartOrder"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewInsertItems"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardPharmacy"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyRegister"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyLogin"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateNotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddNotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddNote"
+            android:exported="false" />
+        <activity
+            android:name=".SelectItems"
+            android:exported="false" />
+        <activity
+            android:name=".ViewReminder"
+            android:exported="false" />
+        <activity
+            android:name=".AddMedicine"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".AlarmReceiver" />
+    </application>
+
+</manifest>

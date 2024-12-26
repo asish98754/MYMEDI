@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dash"
+    tools:context=".DashboardPharmacy">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:text="WELCOME TO MYMEDI"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#EDE7E7"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/sale"
+                android:text="Sale Your Items Here!"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:textColor="#F4F0F0"
+                android:fontFamily="@font/antic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <ImageView
+                android:id="@+id/mymedii"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circlebackgroundyellow"
+                android:src="@drawable/mymedii"/>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="center"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+                        android:id="@+id/addItems"
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/circlebackgroundpurple"
+                        android:src="@drawable/ic_add_black_add"/>
+                    <TextView
+                        android:id="@+id/txtaddItems"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Add Products"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <Button
+                        android:id="@+id/btnadd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD PRODUCTS"
+                        android:textColor="#000000"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="center"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/viewInventory"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:background="@drawable/circlbackgroundgreen"
+                        android:src="@drawable/viewproducticon" />
+
+                    <TextView
+                        android:id="@+id/txtviewItems"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="View Products"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <Button
+                        android:id="@+id/btnview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View PRODUCTS"
+                        android:textColor="#000000"
+                        android:textSize="18sp"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="center"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/logout"
+                        android:background="@drawable/circlebackgroundyellow"
+                        android:src="@drawable/logout"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/txtlogout"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textStyle="bold"
+                        android:text="Log Out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <Button
+                        android:id="@+id/btnlogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log Out"
+                        android:textColor="#000000"
+                        android:textSize="18sp"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
